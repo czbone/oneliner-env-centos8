@@ -143,6 +143,6 @@ mv ${destdirname} ${GITHUB_REPO}
 echo ${filename}" unarchived"
 
 # launch ansible
-cd ${WORK_DIR}/${GITHUB_REPO}/playbooks/${PLAYBOOK}
+cd ${WORK_DIR}/${GITHUB_REPO}/playbooks
 ansible-galaxy install --role-file=requirements.yml --roles-path=/etc/ansible/roles --force
-ansible-playbook -i localhost, main.yml
+ansible-playbook -i localhost, ${PLAYBOOK}.yml
