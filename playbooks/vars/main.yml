@@ -1,0 +1,58 @@
+##############################################################
+#
+# Configuration for Ansible Galaxy Roles
+#
+##############################################################
+# firewall for Debian only
+firewall_allowed_tcp_ports:
+  - "22"
+  - "25"
+  - "80"
+
+#
+# PHP configuration
+#
+php_webserver_daemon: "nginx"
+php_enable_php_fpm: true
+
+php_memory_limit: "128M"
+php_max_execution_time: "90"
+php_upload_max_filesize: "50M"
+php_date_timezone: "Asia/Tokyo"
+
+# PHP modules
+php_packages:
+  - php
+  - php-cli
+  - php-common
+  - php-devel
+  - php-gd
+  - php-mbstring
+  - php-mysql
+  - php-pdo
+  - php-xml
+  - php-fpm
+  - php-pecl-zendopcache
+  - php-pecl-apcu
+  - php-intl
+
+#
+# PHP-FPM configuration
+#
+php_fpm_pool_user: nginx
+php_fpm_pool_group: nginx
+
+#
+# Nginx configuration
+#
+# Install version
+nginx_branch: stable
+
+#
+# MariaDB configuration
+#
+mariadb_server_cnf:
+  character_set_server: utf8
+  collation_server: utf8_general_ci
+  sql_mode: 'ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+

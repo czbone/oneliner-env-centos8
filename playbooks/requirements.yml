@@ -1,0 +1,6 @@
+---
+- geerlingguy.repo-remi
+- geerlingguy.php-versions
+- geerlingguy.php
+- geerlingguy.php-mysql
+- nginxinc.nginx
