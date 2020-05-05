@@ -51,3 +51,4 @@ http://localhost/index2.php
 ```
 
 # ŒŸØŠÂ‹«
+- **‚³‚­‚çVPS** uCentOS8v(•W€OS)
