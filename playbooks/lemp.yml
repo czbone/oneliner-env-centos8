@@ -1,5 +1,5 @@
-#- hosts: localhost ## for ansible-playbook command in provision.sh
-- hosts: all
+- hosts: localhost
+  connection: local
 
   vars_files:
     - vars/main.yml
